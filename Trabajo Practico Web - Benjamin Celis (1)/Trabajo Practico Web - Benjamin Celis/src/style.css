@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080808;
+    color: #c0c0c0;
+    font-family: 'Special Elite', serif;
+    padding-top: 80px;
+}
+
+h1,h2,h3, .logo{
+    font-family: 'Pirata One', serif; /* Tipografía gótica para títulos */
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6); /* Brillo rojo misterioso */
+    margin-bottom: 40px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #111111;
+    border-bottom: 2px dashed #8b0000; /* Línea discontinua rojo sangre */
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+    align-items: center; /* Centrado vertical perfecto */
+    padding: 0 5%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.tech-dot {
+    color: #ff0000;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 1.2rem;
+    transition: all 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000; 
+}
+
+.section-about {
+    padding: 60px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #121212;
+    padding: 30px;
+    border: 1px solid #222;
+    border-radius: 4px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8b0000;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.section-skills {
+    padding: 60px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Si no entran, bajan automáticamente */
+    justify-content: center;
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #161616;
+    border: 2px solid #2a2a2a;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 0px #8b0000; /* Sombra sólida estilo cómic gótico */
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px); /* Efecto de elevación */
+    border-color: #ff0000;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #8b0000;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    color: #ff0000;
+}
+
+.skill-card h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.section-projects {
+    padding: 60px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+}
+
+.project-card {
+    background: #141414;
+    border: 1px solid #252525;
+    padding: 25px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto requerido */
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #8b0000;
+    box-shadow: 0 12px 25px rgba(139, 0, 0, 0.4);
+}
+
+.project-card h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tech-used {
+    font-size: 0.85rem;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-project {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #8b0000;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ff0000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-project:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+footer {
+    background-color: #0c0c0c;
+    border-top: 2px dashed #8b0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 5%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 25px 0;
+}
+
+.contact-icon {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-icon i {
+    font-size: 1.5rem;
+}
+
+.contact-icon:hover {
+    color: #ff0000;
+    transform: scale(1.1); 
+    text-shadow: 0 0 8px #ff0000;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-top: 20px;
+}
